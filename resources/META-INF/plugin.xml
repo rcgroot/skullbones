@@ -1,12 +1,18 @@
 <idea-plugin>
     <id>nl.renedegroot.intellij.plugin.skullsbones</id>
     <name>Skull and Bones - Kotlin platform type usage marker</name>
-    <version>1.0</version>
-    <vendor email="rcrgoot@gmail.com" url="http://github.com/rcgroot/somerepo">YourCompany</vendor>
+    <version>0.1</version>
+    <vendor email="rcrgoot@gmail.com" url="https://github.com/rcgroot/skullbones">René @ Github</vendor>
 
+
+    <!-- sry for the pre-2k style html ;) -->
     <description><![CDATA[
       Slightly exaggerated marking tool to avoid relying on Platform Types in Kotlin code.
 
+      <p><center>Apache License<br>
+Version 2.0, January 2004<br>
+http://www.apache.org/licenses/</center>
+<p>
       <div>Icons made by <a href="https://www.flaticon.com/authors/ocha" title="OCHA">OCHA</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
     ]]></description>
 
