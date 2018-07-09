@@ -1,0 +1,33 @@
+<idea-plugin>
+    <id>nl.renedegroot.intellij.plugin.skullsbones</id>
+    <name>Skull and Bones - Kotlin platform type usage marker</name>
+    <version>1.0</version>
+    <vendor email="rcrgoot@gmail.com" url="http://github.com/rcgroot/somerepo">YourCompany</vendor>
+
+    <description><![CDATA[
+      Slightly exaggerated marking tool to avoid relying on Platform Types in Kotlin code.
+
+      <div>Icons made by <a href="https://www.flaticon.com/authors/ocha" title="OCHA">OCHA</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+    ]]></description>
+
+    <change-notes><![CDATA[
+      Initial release
+    ]]>
+    </change-notes>
+
+    <idea-version since-build="173.0"/>
+
+    <depends>com.intellij.modules.lang</depends>
+    <depends optional="true">org.jetbrains.kotlin</depends>
+
+
+    <extensions defaultExtensionNs="com.intellij">
+        <codeInsight.lineMarkerProvider
+                language="kotlin"
+                implementationClass="nl.renedegroot.intellij.plugin.skullsbones.SkullBonesMarkerProvider"/>
+
+    </extensions>
+
+    <actions/>
+
+</idea-plugin>
