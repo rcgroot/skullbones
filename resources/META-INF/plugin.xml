@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>nl.renedegroot.intellij.plugin.skullsbones</id>
     <name>Skull and Bones - Kotlin platform type usage marker</name>
-    <version>0.1</version>
+    <version>0.2</version>
     <vendor email="rcrgoot@gmail.com" url="https://github.com/rcgroot/skullbones">René @ Github</vendor>
 
 
