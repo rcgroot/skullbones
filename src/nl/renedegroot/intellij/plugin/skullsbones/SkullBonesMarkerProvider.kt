@@ -8,6 +8,7 @@ import com.intellij.openapi.editor.markup.GutterIconRenderer
 import com.intellij.psi.PsiElement
 import com.intellij.util.Function
 import org.jetbrains.kotlin.idea.caches.resolve.analyzeFully
+import org.jetbrains.kotlin.idea.references.SyntheticPropertyAccessorReference
 import org.jetbrains.kotlin.psi.KtNameReferenceExpression
 import org.jetbrains.kotlin.resolve.calls.callUtil.getType
 import org.jetbrains.kotlin.types.FlexibleType
@@ -29,6 +30,9 @@ class SkullBonesMarkerProvider : GutterIconDescriptor(), LineMarkerProvider {
                 val upperBound = type.upperBound
                 if (upperBound.isMarkedNullable
                         && upperBound.makeNotNullable() == lowerBound) {
+                    if (element.isReferencingSetter()) {
+                        return null
+                    }
                     return createLineMarker(element)
                 }
             }
@@ -55,3 +59,6 @@ class SkullBonesMarkerProvider : GutterIconDescriptor(), LineMarkerProvider {
     }
 
 }
+
+private fun KtNameReferenceExpression.isReferencingSetter() =
+        references.any { it is SyntheticPropertyAccessorReference.Setter }
