@@ -3,6 +3,9 @@ Skull and Bones - Kotlin platform type usage marker
 
 Slightly exaggerated marking tool to avoid relying on Platform Types in Kotlin code.
 
+[Download Version 0.2](https://github.com/rcgroot/skullbones/releases/download/v0.2/SkullsBones.zip)
+
+
 # Platform type in a nutshell
 
 When invoking Java code from Kotlin it is sometimes unknown if the type is Nullable.
