@@ -10,7 +10,7 @@ Install the plugin zip file by opening the plugins preferences in your IntelliJ 
 # Platform type in a nutshell
 
 When invoking Java code from Kotlin it is sometimes unknown if the type is Nullable.
-For example a getter could be called that that has no `@Nullable` or `@NonNull` annotation. That type is
+For example a getter could be called that has no `@Nullable` or `@NonNull` annotation. That type is
 called a platform type, sometimes denoted by an exclamation mark. E.g. `String!` for the platform String type.
 
 The current version of the Kotlin compiler hopes for the best and allows the platform type to be treated as non-null.
